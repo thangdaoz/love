@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi Trọn Yêu Thương - 8/3</title>
+    <!-- Elegant Fonts: Playfair Display & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="loading">
+    
+    <!-- Custom Cursor -->
+    <div class="cursor">
+        <div class="cursor-text">View</div>
+    </div>
+    
+    <!-- Minimalist Intro Screen -->
+    <div class="envelope-screen" id="envelopeScreen">
+        <div class="envelope-intro-content">
+            <span class="envelope-date">08 / 03</span>
+            <h2 class="envelope-heading">Bạn có 1<br><em>lá thư</em></h2>
+            
+            <div class="envelope-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"/>
+                    <rect x="3" y="5" width="18" height="14" rx="2"/>
+                </svg>
+            </div>
+        </div>
+
+        <button class="envelope-btn hover-target" id="openEnvelopeBtn">
+            <span>Mở thư</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+    </div>
+
+    <!-- Smooth Scrolling Container Wrapper (hidden initially) -->
+    <div id="smooth-wrapper" style="visibility: hidden;">
+        <div id="smooth-content">
+
+            <!-- Hero Section -->
+            <section class="hero glass-nav section">
+                <div class="hero-content">
+                    <span class="subtitle hero-elem">Mùng 8 tháng 3</span>
+                    <h1 class="title">
+                        <span class="line-wrapper"><span class="line-inner hero-elem">Happy</span></span><br>
+                        <span class="line-wrapper"><span class="line-inner hero-elem">Women's Day</span></span>
+                    </h1>
+                </div>
+                <div class="scroll-indicator hero-elem">
+                    <span>Cuộn xuống</span>
+                    <div class="line"></div>
+                </div>
+            </section>
+
+            <!-- The Letter (Storytelling Flow) -->
+            <section class="story-section section">
+                <div class="container">
+                    <div class="text-block gs-reveal">
+                        <p>Sáu tháng mình quen nhau, không phải là một chặng đường quá dài,</p>
+                    </div>
+                    
+                    <!-- A cinematic separator image with Parallax -->
+                    <div class="image-block full-width gs-parallax-mask hover-target">
+                        <img src="assets/IMG_4585.PNG" class="gs-parallax-img" alt="Romantic Image">
+                    </div>
+
+                    <div class="text-block gs-reveal" style="margin-top: 15vh;">
+                        <p>nhưng đủ để anh nhận ra sự hiện diện của em có ý nghĩa thế nào.</p>
+                    </div>
+                    <div class="text-block text-right gs-reveal">
+                        <p>Cảm ơn em vì đã đến, mang theo sự dịu dàng và cả những niềm vui nho nhỏ,</p>
+                    </div>
+
+                    <!-- Smaller floating image to break text -->
+                    <div class="image-block small float-left gs-parallax-mask hover-target">
+                        <img src="assets/IMG_0672.PNG" class="gs-parallax-img" alt="Soft Image">
+                    </div>
+                    <div class="clear"></div>
+
+                    <div class="text-block center mt-large gs-reveal pb-large">
+                        <p>làm bừng sáng cả những ngày bình thường nhất của anh.</p>
+                        <p style="font-size: 0.8rem; margin-top: 5vh; font-family: 'Inter', sans-serif; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 2px;">Mong em mãi giữ nụ cười ấy.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Horizontal Scroll Gallery Section -->
+            <section class="horizontal-gallery-section section">
+                <div class="horizontal-container">
+                    <!-- Title sliding in horizontally -->
+                    <div class="horizontal-item title-item">
+                        <h2 class="horizontal-title">Những<br><span>Khoảnh Khắc</span></h2>
+                    </div>
+                    
+                    <!-- Filmstrip images -->
+                    <div class="horizontal-item image-item hover-target">
+                        <div class="image-inner">
+                            <img src="assets/IMG_4587.PNG" alt="Moment 1">
+                        </div>
+                    </div>
+                    <div class="horizontal-item image-item hover-target">
+                         <div class="image-inner">
+                            <img src="assets/IMG_4738.PNG" alt="Moment 2">
+                        </div>
+                    </div>
+                    
+                    <!-- Text Content Interleaved in Gallery -->
+                    <div class="horizontal-item text-item">
+                        <h3>Mỗi <em>khung hình</em>...</h3>
+                        <p>Là một mảnh ghép nhỏ lưu giữ những rung động tự nhiên nhất mà mình đã dành cho nhau. Anh muốn lưu lại tất cả những khoảnh khắc này, dù là nhỏ bé nhất.</p>
+                    </div>
+
+                    <!-- Vertical / Portrait Image -->
+                    <div class="horizontal-item image-item portrait hover-target">
+                         <div class="image-inner">
+                            <img src="assets/IMG_4492.PNG" alt="Moment 3">
+                        </div>
+                    </div>
+                    
+                    <!-- Vertical / Portrait Image -->
+                    <div class="horizontal-item image-item portrait hover-target">
+                         <div class="image-inner">
+                            <img src="assets/IMG_0673.PNG" alt="Moment 4">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Refined Footer -->
+            <footer class="footer section">
+                <p class="ending-note gs-reveal">Yêu em.</p>
+            </footer>
+
+        </div> <!-- End smooth-content -->
+    </div> <!-- End smooth-wrapper -->
+
+    <!-- GSAP and Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- (Optional for super smooth scroll without Lenis/Locomotive: GSAP ScrollSmoother is club only, we will use a polyfill approach or native smooth scroll) -->
+    
+    <!-- Using Lenis for smooth scroll (industry standard for Awwwards sites) -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+
+    <!-- Custom Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
